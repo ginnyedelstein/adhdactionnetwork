@@ -52,7 +52,7 @@ const PrimaryBtn = styled.a`
 `;
 
 const JOIN_URL =
-  "https://forms.fillout.com/t/p35enEL9UKus";
+  "https://forms.fillout.com/t/r6JmuqVA4Dus";
 
 export default function CTABanner() {
   return (
