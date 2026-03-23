@@ -227,19 +227,13 @@ export default function Team() {
           <AboutBox>
             <AboutTitle>Who We Are</AboutTitle>
             <AboutText>
-              The ADHD Action Network is a small but dedicated team of
-              passionate problem solvers. Our mission is to research, coordinate,
-              and build a robust network that addresses and overcomes challenges
-              in ADHD support. We believe great ideas and effective solutions
-              stem from collaboration, co-production, innovation, and relentless
-              resilience.
-
               ADHD Action Network was founded and is led by Nick Pairaudeau who only discovered he had ADHD after 51 years
               of not finding his place in this non-ADHD world. After his diagnosis he looked around for help and encouragement,
               but couldn’t find what he was searching for. So, he embarked on a journey to create a warm, supportive, practical
               and scientifically informed community that would welcome all those living with ADHD symptoms, whether
               diagnosed or not.
-
+            </AboutText>
+            <AboutText>
               From the beginning, our programme has been designed by people with ADHD, and refined with feedback from
               participants over many hours. You will learn about ADHD, discover more about yourself and meet others who will
               share their successes and challenges, as you will with them.
