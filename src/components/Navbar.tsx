@@ -68,7 +68,7 @@ const NavLink = styled(Link)`
 `;
 
 const CTAButton = styled.a`
-  background: #2563eb;
+  background: #1d4ed8;
   color: #ffffff;
   padding: 0.5rem 1.125rem;
   border-radius: 6px;
@@ -78,7 +78,7 @@ const CTAButton = styled.a`
   white-space: nowrap;
 
   &:hover {
-    background: #1d4ed8;
+    background: rgb(56 162 37);
   }
 
   @media (max-width: 768px) {
@@ -127,7 +127,7 @@ const MobileLink = styled(Link)`
 `;
 
 const MobileCTA = styled.a`
-  background: #2563eb;
+  background: rgb(56 162 37);
   color: white;
   padding: 0.75rem 1.25rem;
   border-radius: 6px;

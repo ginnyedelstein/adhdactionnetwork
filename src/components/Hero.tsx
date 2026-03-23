@@ -3,7 +3,7 @@
 import styled from "styled-components";
 
 const HeroSection = styled.section`
-  background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #2563eb 100%);
+  background: linear-gradient(135deg, rgb(138 30 30) 0%, #1d4ed8 50%, rgb(56 162 37) 100%);
   color: white;
   padding: 3.5rem 1.5rem 3.5rem;
   text-align: center;
@@ -79,7 +79,7 @@ const ButtonGroup = styled.div`
 
 const PrimaryBtn = styled.a`
   background: #ffffff;
-  color: #1d4ed8;
+  color: rgb(56 162 37);
   padding: 0.75rem 1.75rem;
   border-radius: 8px;
   font-size: 0.95rem;
@@ -116,7 +116,7 @@ const StatsGrid = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0px auto 2.5rem;
 
   @media (max-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
@@ -179,6 +179,7 @@ const Card = styled.div`
   border-radius: 12px;
   padding: 2rem 1.75rem;
   text-align: left;
+  margin: 0 30px;
 `;
 
 const JOIN_URL =
@@ -204,11 +205,11 @@ export default function Hero() {
         support, practical tools, and meaningful connections that foster real
         change and personal growth.
       </HeroSub>
-      <ButtonGroup>
+      {/* <ButtonGroup>
         <PrimaryBtn href={JOIN_URL} target="_blank" rel="noopener noreferrer">
           Join The Programme
         </PrimaryBtn>
-      </ButtonGroup>
+      </ButtonGroup> */}
       <StatsGrid>
         {stats.map((s) => (
           <StatCard key={s.value}>
@@ -217,8 +218,6 @@ export default function Hero() {
           </StatCard>
         ))}
       </StatsGrid>
-      <br />
-
       <Card>
         <Quote>"As a clinician and an ADHD individual this has been a transformative experience for me. In 7 weeks to have
           learnt so much about myself, my ADHD and how to manage it is unparalleled, this is such an incredible program and I wish it was available to everyone."</Quote>
@@ -231,8 +230,7 @@ export default function Hero() {
         </Attribution>
       </Card>
       <br />
-
-      <div style={{ fontSize: "small" }}>
+      <div style={{ fontSize: "x-small" }}>
         *Results from 35 programme participants funded by Public Health England in December 2025
       </div>
     </HeroSection>

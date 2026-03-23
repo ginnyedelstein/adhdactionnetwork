@@ -181,6 +181,10 @@ export default function Footer() {
               </ColLink>
             </ColLinks>
           </div>
+
+          <div>
+            <img src="/logo_large.png" alt="ADHD Support" style={{ width: "100%", borderRadius: "23px" }} />
+          </div>
         </TopGrid>
 
         <Divider />
