@@ -60,12 +60,12 @@ export default function CTABanner() {
       <Inner>
         <Title>Ready to Transform Your ADHD Journey?</Title>
         <Sub>
-          Join our free 7-week programme and become part of a community that
+          Join our 7-week programme and become part of a community that
           understands your challenges and celebrates your successes.
         </Sub>
         <ButtonGroup>
           <PrimaryBtn href={JOIN_URL} target="_blank" rel="noopener noreferrer">
-            Join Free Programme
+            Join The Programme
           </PrimaryBtn>
         </ButtonGroup>
       </Inner>

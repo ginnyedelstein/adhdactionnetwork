@@ -156,12 +156,12 @@ export default function Navbar() {
             <NavLink href="#programmes">Programmes</NavLink>
           </li>
           <li>
-            <NavLink href="#community">Community</NavLink>
+            <NavLink href="#aboutus">About Us</NavLink>
           </li>
         </NavLinks>
 
         <CTAButton href={JOIN_URL} target="_blank" rel="noopener noreferrer">
-          Join Free Programme
+          Join The Programme
         </CTAButton>
 
         <HamburgerButton
@@ -178,11 +178,11 @@ export default function Navbar() {
         <MobileLink href="#programmes" onClick={() => setMenuOpen(false)}>
           Programmes
         </MobileLink>
-        <MobileLink href="#community" onClick={() => setMenuOpen(false)}>
-          Community
+        <MobileLink href="#aboutus" onClick={() => setMenuOpen(false)}>
+          About Us
         </MobileLink>
         <MobileCTA href={JOIN_URL} target="_blank" rel="noopener noreferrer">
-          Join Free Programme
+          Join Programme
         </MobileCTA>
       </MobileMenu>
     </Nav>

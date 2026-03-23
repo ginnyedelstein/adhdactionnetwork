@@ -131,6 +131,14 @@ const testimonials = [
     initial: "K",
     color: "#059669",
   },
+  // {
+  //   quote:
+  //     "As a clinician and an ADHD individual this has been a transformative experience for me. In 7 weeks to have learnt so much about myself, my ADHD and how to manage it is unparalleled, this is such an incredible program and I wish it was available to everyone.",
+  //   name: "Dr Gia Whitecross",
+  //   role: "Consultant Psychiatrist, MBBS, MRCPsych, MSc (Distinction), PGDipCAT (participant in London Borough of Islington programme December 2025)",
+  //   initial: "W",
+  //   color: "#839605",
+  // },
 ];
 
 export default function Testimonials() {

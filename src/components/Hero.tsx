@@ -149,10 +149,10 @@ const JOIN_URL =
   "https://forms.fillout.com/t/p35enEL9UKus";
 
 const stats = [
-  { value: "3-4%", label: "UK Adults with ADHD" },
-  { value: "12", label: "Max Group Size" },
-  { value: "100%", label: "Free Programme" },
-  { value: "7", label: "Week Duration" },
+  { value: "82%", label: "of participants learnt new ADHD management strategies*" },
+  { value: "100%", label: "of participants highly recommended the programmee*" },
+  { value: "100%", label: "of participants reported reduced ADHD symptoms*" },
+  { value: "15%", label: "less GP visits due to programme*" },
 ];
 
 export default function Hero() {
@@ -164,13 +164,13 @@ export default function Hero() {
       </Badge>
       <HeroTitle>Transform Your ADHD Journey</HeroTitle>
       <HeroSub>
-        Join the UK&apos;s leading ADHD community for research-informed peer
+        Join the leading ADHD community for research-informed peer
         support, practical tools, and meaningful connections that foster real
         change and personal growth.
       </HeroSub>
       <ButtonGroup>
         <PrimaryBtn href={JOIN_URL} target="_blank" rel="noopener noreferrer">
-          Join Free Programme
+          Join Programme
         </PrimaryBtn>
       </ButtonGroup>
       <StatsGrid>
@@ -181,6 +181,10 @@ export default function Hero() {
           </StatCard>
         ))}
       </StatsGrid>
+      <br />
+      <br />
+
+      <div>*Results from 35 programme participants funded by Public Health England in December 2025</div>
     </HeroSection>
   );
 }
