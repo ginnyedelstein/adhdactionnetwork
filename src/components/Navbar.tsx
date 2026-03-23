@@ -138,7 +138,7 @@ const MobileCTA = styled.a`
 `;
 
 const JOIN_URL =
-  "https://forms.fillout.com/t/p35enEL9UKus";
+  "https://forms.fillout.com/t/r6JmuqVA4Dus";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -181,7 +181,7 @@ export default function Navbar() {
           About Us
         </MobileLink>
         <MobileCTA href={JOIN_URL} target="_blank" rel="noopener noreferrer">
-          Join Programme
+          Join The Programme
         </MobileCTA>
       </MobileMenu>
     </Nav>

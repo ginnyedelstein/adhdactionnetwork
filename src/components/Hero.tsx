@@ -145,8 +145,45 @@ const StatLabel = styled.div`
   line-height: 1.3;
 `;
 
+const Quote = styled.p`
+  font-size: 0.9rem;
+  color: #374151;
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+`;
+
+const Attribution = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 1.25rem;
+`;
+
+const AuthorInfo = styled.div``;
+
+const AuthorName = styled.div`
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #111827;
+`;
+
+const AuthorRole = styled.div`
+  font-size: 0.8rem;
+  color: #9ca3af;
+`;
+
+const Card = styled.div`
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2rem 1.75rem;
+`;
+
 const JOIN_URL =
-  "https://forms.fillout.com/t/p35enEL9UKus";
+  "https://forms.fillout.com/t/r6JmuqVA4Dus";
 
 const stats = [
   { value: "82%", label: "of participants learnt new ADHD management strategies*" },
@@ -170,7 +207,7 @@ export default function Hero() {
       </HeroSub>
       <ButtonGroup>
         <PrimaryBtn href={JOIN_URL} target="_blank" rel="noopener noreferrer">
-          Join Programme
+          Join The Programme
         </PrimaryBtn>
       </ButtonGroup>
       <StatsGrid>
@@ -182,9 +219,23 @@ export default function Hero() {
         ))}
       </StatsGrid>
       <br />
+
+      <Card>
+        <Quote>"As a clinician and an ADHD individual this has been a transformative experience for me. In 7 weeks to have
+          learnt so much about myself, my ADHD and how to manage it is unparalleled, this is such an incredible program and I wish it was available to everyone."</Quote>
+        <Attribution>
+          <AuthorInfo>
+            <AuthorName>Dr Gia Whitecross</AuthorName>
+            <AuthorRole>Consultant Psychiatrist, MBBS, MRCPsych, MSc
+              (Distinction), PGDipCAT (participant in London Borough of Islington programme December 2025)</AuthorRole>
+          </AuthorInfo>
+        </Attribution>
+      </Card>
       <br />
 
-      <div>*Results from 35 programme participants funded by Public Health England in December 2025</div>
+      <div style={{ fontSize: "small" }}>
+        *Results from 35 programme participants funded by Public Health England in December 2025
+      </div>
     </HeroSection>
   );
 }
