@@ -116,7 +116,7 @@ const StatsGrid = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0px auto 2.5rem;
 
   @media (max-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
@@ -204,11 +204,11 @@ export default function Hero() {
         support, practical tools, and meaningful connections that foster real
         change and personal growth.
       </HeroSub>
-      <ButtonGroup>
+      {/* <ButtonGroup>
         <PrimaryBtn href={JOIN_URL} target="_blank" rel="noopener noreferrer">
           Join The Programme
         </PrimaryBtn>
-      </ButtonGroup>
+      </ButtonGroup> */}
       <StatsGrid>
         {stats.map((s) => (
           <StatCard key={s.value}>
@@ -217,8 +217,6 @@ export default function Hero() {
           </StatCard>
         ))}
       </StatsGrid>
-      <br />
-
       <Card>
         <Quote>"As a clinician and an ADHD individual this has been a transformative experience for me. In 7 weeks to have
           learnt so much about myself, my ADHD and how to manage it is unparalleled, this is such an incredible program and I wish it was available to everyone."</Quote>
@@ -231,8 +229,7 @@ export default function Hero() {
         </Attribution>
       </Card>
       <br />
-
-      <div style={{ fontSize: "small" }}>
+      <div style={{ fontSize: "x-small" }}>
         *Results from 35 programme participants funded by Public Health England in December 2025
       </div>
     </HeroSection>
