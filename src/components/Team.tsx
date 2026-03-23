@@ -237,6 +237,8 @@ export default function Team() {
               From the beginning, our programme has been designed by people with ADHD, and refined with feedback from
               participants over many hours. You will learn about ADHD, discover more about yourself and meet others who will
               share their successes and challenges, as you will with them.
+            </AboutText>
+            <AboutText>
               Our trained facilitators delivering the service also have ADHD and work in mental health in a variety of roles. This
               means they bring first‑hand insight, relevant skills, and deep understanding, placing them in a strong position to
               create a beautiful setting for you to find a new way to live your life with ADHD.
