@@ -5,7 +5,7 @@ import styled from "styled-components";
 const HeroSection = styled.section`
   background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #2563eb 100%);
   color: white;
-  padding: 5rem 1.5rem 4rem;
+  padding: 3.5rem 1.5rem 3.5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -53,9 +53,9 @@ const BadgeDot = styled.span`
 
 const HeroTitle = styled.h1`
   font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 800;
-  line-height: 1.15;
-  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1rem;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -74,7 +74,7 @@ const ButtonGroup = styled.div`
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 `;
 
 const PrimaryBtn = styled.a`
@@ -150,7 +150,7 @@ const Quote = styled.p`
   color: #374151;
   line-height: 1.7;
   flex: 1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-style: italic;
 `;
 
@@ -158,8 +158,6 @@ const Attribution = styled.div`
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  border-top: 1px solid #f3f4f6;
-  padding-top: 1.25rem;
 `;
 
 const AuthorInfo = styled.div``;
@@ -180,6 +178,7 @@ const Card = styled.div`
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   padding: 2rem 1.75rem;
+  text-align: left;
 `;
 
 const JOIN_URL =
@@ -225,7 +224,7 @@ export default function Hero() {
           learnt so much about myself, my ADHD and how to manage it is unparalleled, this is such an incredible program and I wish it was available to everyone."</Quote>
         <Attribution>
           <AuthorInfo>
-            <AuthorName>Dr Gia Whitecross</AuthorName>
+            <AuthorName>Dr. Gia Whitecross</AuthorName>
             <AuthorRole>Consultant Psychiatrist, MBBS, MRCPsych, MSc
               (Distinction), PGDipCAT (participant in London Borough of Islington programme December 2025)</AuthorRole>
           </AuthorInfo>
