@@ -5,7 +5,7 @@ import GlobalStylesWrapper from "@/src/components/GlobalStylesWrapper";
 export const metadata: Metadata = {
   title: "ADHD Action Network - Transform Your ADHD Journey",
   description:
-    "Join the UK's leading ADHD community for research-informed peer support, practical tools, and meaningful connections that foster real change and personal growth.",
+    "Join the leading ADHD community for research-informed peer support, practical tools, and meaningful connections that foster real change and personal growth.",
 };
 
 export default function RootLayout({

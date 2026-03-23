@@ -189,6 +189,59 @@ const JoinBtn = styled.a`
   }
 `;
 
+const QuoteMark = styled.div`
+  font-size: 3rem;
+  line-height: 1;
+  color: #bfdbfe;
+  font-family: Georgia, serif;
+  margin-bottom: 0.75rem;
+`;
+
+const Quote = styled.p`
+  font-size: 0.9rem;
+  color: #374151;
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+`;
+
+const Attribution = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 1.25rem;
+`;
+
+const Avatar = styled.div`
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+`;
+
+const AuthorInfo = styled.div``;
+
+const AuthorName = styled.div`
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #111827;
+`;
+
+const AuthorRole = styled.div`
+  font-size: 0.8rem;
+  color: #9ca3af;
+`;
+
+
 const JOIN_URL =
   "https://forms.fillout.com/t/p35enEL9UKus";
 
@@ -198,7 +251,7 @@ const programmes = [
     title: "Research-Informed Peer Support",
     text: "Join our structured 7-week ADHD & Addiction Recovery Programme, aligned with NICE ADHD Guidelines, offering practical tools for real transformation.",
     features: [
-      "FREE 7-week programme",
+      "7-week programme",
       "Limited to 12 spaces per cohort",
       "Research-informed approach",
     ],
@@ -252,7 +305,7 @@ export default function Programmes() {
           ))}
         </Grid>
 
-        <FeaturedCard>
+        {/* <FeaturedCard>
           <FeaturedContent>
             <FeaturedBadge>Featured Programme</FeaturedBadge>
             <FeaturedTitle>ADHD &amp; Addiction Recovery Programme</FeaturedTitle>
@@ -262,7 +315,6 @@ export default function Programmes() {
               group offering practical tools for lasting change.
             </FeaturedText>
             <FeaturedMeta>
-              <MetaBadge>FREE programme</MetaBadge>
               <MetaBadge>Limited to 12 spaces</MetaBadge>
               <MetaBadge>7-week duration</MetaBadge>
             </FeaturedMeta>
@@ -270,7 +322,23 @@ export default function Programmes() {
           <JoinBtn href={JOIN_URL} target="_blank" rel="noopener noreferrer">
             Join the Programme
           </JoinBtn>
-        </FeaturedCard>
+        </FeaturedCard> */}
+
+        <Card>
+          <QuoteMark>&ldquo;</QuoteMark>
+          <Quote>As a clinician and an ADHD individual this has been a transformative experience for me. In 7 weeks to have
+            learnt so much about myself, my ADHD and how to manage it is unparalleled, this is such an incredible program and I wish it was available to everyone.</Quote>
+          <Attribution>
+            <Avatar style={{ background: "#12c93c" }}>
+              W
+            </Avatar>
+            <AuthorInfo>
+              <AuthorName>Dr Gia Whitecross</AuthorName>
+              <AuthorRole>Consultant Psychiatrist, MBBS, MRCPsych, MSc
+                (Distinction), PGDipCAT (participant in London Borough of Islington programme December 2025)</AuthorRole>
+            </AuthorInfo>
+          </Attribution>
+        </Card>
       </Inner>
     </Section>
   );

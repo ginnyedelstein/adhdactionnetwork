@@ -85,6 +85,7 @@ const partners = [
   { abbr: "UCL", name: "University College London" },
   { abbr: "CoE", name: "Community of Excellence" },
   { abbr: "Council", name: "Islington Council, London" },
+  { abbr: "Google", name: "Google, Alphabet Inc." },
 ];
 
 export default function Partners() {

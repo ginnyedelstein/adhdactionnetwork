@@ -143,6 +143,9 @@ export default function Footer() {
               <ColLink>
                 <Link href="#community">Community</Link>
               </ColLink>
+              <ColLink>
+                <Link href="mailto:info@adhdactionnetwork.com">Contact Us: info@adhdactionnetwork.com</Link>
+              </ColLink>
             </ColLinks>
           </div>
 

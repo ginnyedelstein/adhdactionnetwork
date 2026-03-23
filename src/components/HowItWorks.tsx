@@ -99,8 +99,8 @@ const StepText = styled.p`
 const steps = [
   {
     n: 1,
-    title: "Join Our Free Programme",
-    text: "Sign up for our research-informed ADHD support programme. No cost, just commitment to your growth and recovery journey.",
+    title: "Join Our Programme",
+    text: "Sign up for our research-informed ADHD support programme.",
   },
   {
     n: 2,
