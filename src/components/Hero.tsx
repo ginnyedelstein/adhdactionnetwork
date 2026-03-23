@@ -3,7 +3,7 @@
 import styled from "styled-components";
 
 const HeroSection = styled.section`
-  background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #2563eb 100%);
+  background: linear-gradient(135deg, rgb(138 30 30) 0%, #1d4ed8 50%, rgb(56 162 37) 100%);
   color: white;
   padding: 3.5rem 1.5rem 3.5rem;
   text-align: center;
@@ -79,7 +79,7 @@ const ButtonGroup = styled.div`
 
 const PrimaryBtn = styled.a`
   background: #ffffff;
-  color: #1d4ed8;
+  color: rgb(56 162 37);
   padding: 0.75rem 1.75rem;
   border-radius: 8px;
   font-size: 0.95rem;
@@ -179,6 +179,7 @@ const Card = styled.div`
   border-radius: 12px;
   padding: 2rem 1.75rem;
   text-align: left;
+  margin: 0 30px;
 `;
 
 const JOIN_URL =

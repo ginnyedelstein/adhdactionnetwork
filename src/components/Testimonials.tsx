@@ -114,6 +114,7 @@ const testimonials = [
     name: "Josh",
     role: "7-Week Programme Alumni",
     initial: "J",
+    color: "rgb(138 30 30)",
   },
   {
     quote:
@@ -121,7 +122,6 @@ const testimonials = [
     name: "Jane",
     role: "7-Week Programme Alumni",
     initial: "J",
-    color: "#7c3aed",
   },
   {
     quote:
@@ -129,7 +129,7 @@ const testimonials = [
     name: "Katie",
     role: "7-Week Programme Alumni",
     initial: "K",
-    color: "#059669",
+    color: "rgb(56 162 37)",
   },
   // {
   //   quote:

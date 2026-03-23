@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Section = styled.section`
   padding: 5rem 1.5rem;
-  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  background: linear-gradient(135deg, rgb(138 30 30) 0%, #1d4ed8 50%, rgb(56 162 37) 100%);
   text-align: center;
   color: white;
 `;
