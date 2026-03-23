@@ -147,8 +147,7 @@ export default function Navbar() {
     <Nav>
       <NavInner>
         <Logo href="/">
-          <LogoIcon>AAN</LogoIcon>
-          ADHD Action Network
+          <LogoIcon><img src="/logo_small.png" alt="ADHD Action Network" /></LogoIcon>          ADHD Action Network
         </Logo>
 
         <NavLinks>

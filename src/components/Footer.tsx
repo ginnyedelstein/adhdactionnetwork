@@ -120,7 +120,7 @@ export default function Footer() {
         <TopGrid>
           <BrandCol>
             <LogoRow>
-              <LogoIcon>AAN</LogoIcon>
+              <LogoIcon><img src="/logo_small.png" alt="ADHD Action Network" /></LogoIcon>
               <BrandName>ADHD Action Network</BrandName>
             </LogoRow>
             <BrandDesc>
