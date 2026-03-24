@@ -254,6 +254,11 @@ export default function Team() {
                 support for ADHD patients.
               </GoalText>
             </GoalBox>
+            <AboutText>
+              If you are interested in learning more about how you could be a part of this community please get in
+              touch with us at:
+              <a href="mailto:info@adhdactionnetwork.com" style={{ fontWeight: "bold" }}> info@adhdactionnetwork.com</a>
+            </AboutText>
             {/* 
             <ValueGrid>
               {values.map((v) => (

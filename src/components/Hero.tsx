@@ -187,7 +187,7 @@ const JOIN_URL =
 
 const stats = [
   { value: "82%", label: "of participants learnt new ADHD management strategies*" },
-  { value: "100%", label: "of participants highly recommended the programmee*" },
+  { value: "100%", label: "of participants highly recommended the programme*" },
   { value: "100%", label: "of participants reported reduced ADHD symptoms*" },
   { value: "15%", label: "less GP visits due to programme*" },
 ];

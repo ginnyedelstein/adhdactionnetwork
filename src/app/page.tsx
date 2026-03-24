@@ -17,10 +17,10 @@ export default function Home() {
       <Foundation />
       <Programmes />
       <HowItWorks />
+      <Team />
       <Testimonials />
       <CTABanner />
       <Partners />
-      <Team />
       <Footer />
     </main>
   );

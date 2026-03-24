@@ -121,7 +121,7 @@ export default function Footer() {
           <BrandCol>
             <LogoRow>
               <LogoIcon><img src="/logo_small.png" alt="ADHD Action Network" /></LogoIcon>
-              <BrandName>ADHD Action Network</BrandName>
+              <BrandName> ADHD ACTION NETWORK</BrandName>
             </LogoRow>
             <BrandDesc>
               Building a supportive ADHD community through research-informed
@@ -142,6 +142,9 @@ export default function Footer() {
               </ColLink>
               <ColLink>
                 <Link href="#community">Community</Link>
+              </ColLink>
+              <ColLink>
+                <Link href="/privacy_policy.pdf">Data Privacy Policy</Link>
               </ColLink>
               <ColLink>
                 <Link href="mailto:info@adhdactionnetwork.com">Contact Us: info@adhdactionnetwork.com</Link>
