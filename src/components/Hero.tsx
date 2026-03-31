@@ -28,29 +28,6 @@ const HeroSection = styled.section`
   }
 `;
 
-const Badge = styled.div`
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.35rem 0.875rem;
-  border-radius: 100px;
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.02em;
-`;
-
-const BadgeDot = styled.span`
-  width: 6px;
-  height: 6px;
-  background: #86efac;
-  border-radius: 50%;
-  display: inline-block;
-`;
-
 const HeroTitle = styled.h1`
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
@@ -69,59 +46,23 @@ const HeroSub = styled.p`
   line-height: 1.65;
 `;
 
-const ButtonGroup = styled.div`
+const VideoStatsLayout = styled.div`
   display: flex;
-  gap: 1rem;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 2.5rem;
-`;
-
-const PrimaryBtn = styled.a`
-  background: #ffffff;
-  color: rgb(56 162 37);
-  padding: 0.75rem 1.75rem;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  transition: all 0.15s;
-  display: inline-block;
-
-  &:hover {
-    background: #f0f9ff;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-`;
-
-const SecondaryBtn = styled.a`
-  background: rgba(255, 255, 255, 0.12);
-  color: white;
-  padding: 0.75rem 1.75rem;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: all 0.15s;
-  display: inline-block;
-
-  &:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-1px);
-  }
-`;
-
-const StatsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  max-width: 700px;
-  margin: 0px auto 2.5rem;
+  margin-bottom: 2.5rem;
+  overflow: hidden
 
-  @media (max-width: 640px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
+`;
+
+const StatColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 `;
 
 const StatCard = styled.div`
@@ -130,6 +71,11 @@ const StatCard = styled.div`
   border-radius: 10px;
   padding: 1.25rem 1rem;
   text-align: center;
+  max-width: 180px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 const StatValue = styled.div`
@@ -156,21 +102,23 @@ const Quote = styled.p`
 
 const Attribution = styled.div`
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
+  align-items: baseline;
+  gap: 0.5rem;
 `;
-
-const AuthorInfo = styled.div``;
 
 const AuthorName = styled.div`
   font-weight: 700;
   font-size: 0.9rem;
   color: #111827;
+  white-space: nowrap;
+  display: inline-block;
+  gap: 1.5rem;
 `;
 
 const AuthorRole = styled.div`
   font-size: 0.8rem;
   color: #9ca3af;
+  display: inline-block;
 `;
 
 const Card = styled.div`
@@ -182,8 +130,7 @@ const Card = styled.div`
   margin: 0 30px;
 `;
 
-const JOIN_URL =
-  "https://forms.fillout.com/t/r6JmuqVA4Dus";
+const JOIN_URL = "https://forms.fillout.com/t/r6JmuqVA4Dus";
 
 const stats = [
   { value: "82%", label: "of participants learnt new ADHD management strategies*" },
@@ -195,44 +142,65 @@ const stats = [
 export default function Hero() {
   return (
     <HeroSection>
-      <Badge>
-        <BadgeDot />
-        NICE Guidelines Aligned
-      </Badge>
       <HeroTitle>Transform Your ADHD Journey</HeroTitle>
       <HeroSub>
-        Join the leading ADHD community for research-informed peer
-        support, practical tools, and meaningful connections that foster real
-        change and personal growth.
+        Join the leading ADHD community for research-informed peer support,
+        practical tools, and meaningful connections that foster real change and
+        personal growth.
       </HeroSub>
-      {/* <ButtonGroup>
-        <PrimaryBtn href={JOIN_URL} target="_blank" rel="noopener noreferrer">
-          Join The Programme
-        </PrimaryBtn>
-      </ButtonGroup> */}
-      <StatsGrid>
-        {stats.map((s) => (
-          <StatCard key={s.value}>
-            <StatValue>{s.value}</StatValue>
-            <StatLabel>{s.label}</StatLabel>
-          </StatCard>
-        ))}
-      </StatsGrid>
+
+      <VideoStatsLayout>
+        <StatColumn>
+          {stats.slice(0, 2).map((s) => (
+            <StatCard key={s.value}>
+              <StatValue>{s.value}</StatValue>
+              <StatLabel>{s.label}</StatLabel>
+            </StatCard>
+          ))}
+        </StatColumn>
+
+        <video
+          controls
+          loop
+          playsInline
+          style={{ width: "40%", height: "auto", borderRadius: "10px", flexShrink: 0 }}
+        >
+          <source src="/trailer.mp4" type="video/mp4" />
+        </video>
+
+        <StatColumn>
+          {stats.slice(2, 4).map((s) => (
+            <StatCard key={s.value}>
+              <StatValue>{s.value}</StatValue>
+              <StatLabel>{s.label}</StatLabel>
+            </StatCard>
+          ))}
+        </StatColumn>
+      </VideoStatsLayout>
+
       <Card>
-        <Quote>"As a clinician and an ADHD individual this has been a transformative experience for me. In 7 weeks to have
-          learnt so much about myself, my ADHD and how to manage it is unparalleled, this is such an incredible program and I wish it was available to everyone."</Quote>
+        <Quote>
+          &ldquo;As a clinician and an ADHD individual this has been a
+          transformative experience for me. In 7 weeks to have learnt so much
+          about myself, my ADHD and how to manage it is unparalleled, this is
+          such an incredible program and I wish it was available to
+          everyone.&rdquo;
+        </Quote>
         <Attribution>
-          <AuthorInfo>
-            <AuthorName>Dr. Gia Whitecross</AuthorName>
-            <AuthorRole>Consultant Psychiatrist, MBBS, MRCPsych, MSc
-              (Distinction), PGDipCAT (participant in London Borough of Islington programme December 2025)</AuthorRole>
-          </AuthorInfo>
+          <AuthorName>Dr. Gia Whitecross, </AuthorName>
+          <AuthorRole>
+            Consultant Psychiatrist, MBBS, MRCPsych, MSc (Distinction),
+            PGDipCAT
+          </AuthorRole>
         </Attribution>
       </Card>
+
       <br />
+
       <div style={{ fontSize: "x-small" }}>
-        *Results from 35 programme participants funded by Public Health England in December 2025
+        *Results from 35 programme participants funded by Public Health England
+        in December 2025
       </div>
-    </HeroSection>
+    </HeroSection >
   );
 }
